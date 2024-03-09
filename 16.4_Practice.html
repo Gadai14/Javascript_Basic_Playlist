@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   <style>
+    .box{
+        width: 100vh;
+        height: auto;
+        margin: 0px auto;
+        padding: 10px;
+        border: 2px solid seagreen;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+        background-color: rgba(96, 214, 147, 0.324);
+    }
+   </style>
+</head>
+<body>
+   <div class="box">First div</div>
+   <div class="box">Second div</div>
+   <div class="box">Third div</div>
+</body>
+<script>
+   let divs=document.querySelectorAll(".box");
+   // divs[0].innerText="Unique value 1";
+   // divs[1].innerText="Unique value 2";
+   // divs[2].innerText="Unique value 3";
+   //Another Method
+   idx=1;
+   for(let div of divs){
+div.innerText=`new unique ${idx}`;
+idx++;
+   }
+
+</script>
+</html>

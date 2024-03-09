@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myclass{
+            color: blueviolet;
+        }
+        .newclass{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    
+    <p class="myclass">I am a paragraph</p>
+    <script>
+        let button=document.createElement("button");
+        button.innerText="CLICK ME"
+        button.style.color="white";
+        button.style.backgroundColor="purple";
+        document.querySelector("body").prepend(button);
+
+        let para=document.querySelector("p");
+        para.classList.add("newclass");
+    </script>
+</body>
+
+</html>

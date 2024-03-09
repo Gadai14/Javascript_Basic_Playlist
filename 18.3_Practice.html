@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #change{
+            height: 50px;
+            border: 10px solid whitesmoke;
+            border-radius: 50px;
+            box-shadow: 2px 2px 10px 0px royalblue;
+            font-size: 20px;
+            width: 130px;
+            text-align: center;
+            cursor: pointer;
+           
+
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            padding: 30px;
+
+
+        }
+        #box{
+border-radius: 50px;
+border: 3px solid coral;
+height: 500px;
+width: 900px;
+box-shadow:1px 2px 0px 20px rgba(220, 20, 60, 0.135);
+margin: 0px auto;
+
+        }
+        .dark{
+            background-color: rgb(0, 0, 0);
+            border: 2px solid seagreen;
+
+        }
+        .light{
+            background-color: whitesmoke;
+           
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        
+        <button id="change">Change</button>    
+        
+    </nav>
+    <div id="box">
+    </div>
+
+</body>
+<script>
+    let change=document.querySelector("#change");
+    let currmode="light";
+    let body=document.querySelector("#box");
+    change.addEventListener("click", () =>{
+        if(currmode==="light")
+        {
+            
+            currmode="dark";
+            body.classList.add("dark");
+            body.classList.remove("light");
+        }
+        else{
+            currmode="light";
+            console.log("light");
+            body.classList.add("light");
+            body.classList.remove("dark");
+        }
+    });
+</script>
+</html>

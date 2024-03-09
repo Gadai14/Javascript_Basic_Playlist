@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#box
+{
+    background-color: aquamarine;
+    border-radius: 40px;
+    height: 300px;
+    margin: 0px auto;
+    width: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+   
+    box-shadow: 5px 3px 1px 0px rgb(46, 88, 4);
+
+}
+ul{
+    
+}
+    </style>
+</head>
+<body>
+    <div id="box">
+        hello
+        <ul>List</ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </div>
+    <script>
+        let div=document.querySelector("div");
+        div.style.backgroundColor="skyblue";
+        div.innerText=div.innerText+ "Abhi";
+
+        // To create somthing
+        let newbtn=document.createElement("button");
+        newbtn.innerText="Click me";
+        console.log(newbtn);
+
+        // to show the created things we should append
+        let div1=document.querySelector("div");
+        div1.append(newbtn);
+
+        // node.prepend(div1) -- Adds at the start of node(inside)         node.before(div1) -- Adds before the node (outside)     node.after(div1) -- Adds after the node (outside)
+    </script>
+</body>
+</html>

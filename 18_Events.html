@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+      background-color: yellowgreen;
+     
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">click me</button>
+    <button ondblclick="console.log('button was clicked 2 times'); ">click me 2 times</button>
+    <div>this is a box</div>
+
+    <script>
+        // node.event=()=>{ handle here  }
+
+        // Event Handler by script
+let btn1=document.querySelector("#btn1");
+// btn1.onclick=(evt) =>{
+// console.log("btn1 is clicked");
+// console.log(evt.type);
+// alert("Nice");
+//}
+let div=document.querySelector("div");
+div.onmouseover=() =>{
+    console.log("You are inside div");
+}
+// Event object : It is a special object that has details about the event ..   node.event=(e) => {  handler here  }
+
+// Event listener
+btn1.addEventListener("click", ()=>{
+    console.log("btn1 is clicked");
+});
+btn1.addEventListener("click", ()=>{
+    console.log("btn2 is clicked");
+});
+    </script>
+</body>
+</html>
