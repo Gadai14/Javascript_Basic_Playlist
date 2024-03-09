@@ -1,0 +1,21 @@
+1) Window object represents an open window in a browser. It is browser's object (not javascript's) & is automatically created by browser.
+
+It is a global object with lots of properties & methods.
+
+For example : 
+window.console.log("Hello");        
+or,
+window.alert("Virus detected");
+
+
+ 2) DOM : When a web page is loaded , the browser creates a Document object model(DOM) of the page .  
+ In the console -> write window->Choose or expand Document .
+ or, 
+ write window.Document .
+
+
+**  To change anything in the runtime in browser's console : 
+window.document.body.style.background="green";
+
+*** Parent    child   sibling(same level)
+              nodes =>  firstchild    lastchild

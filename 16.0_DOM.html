@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(165, 42, 42, 0.1);
+        }
+        h1,h3{
+            text-align: center;
+            color: brown;
+        }
+        p{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        button{
+            text-align: center;
+font-size: 18px;
+background-color: rgba(137, 43, 226, 0.249);
+          display: flex;
+          margin: 0px auto;
+         
+          border-radius: 30px;
+          border: 1px solid transparent;
+          height: auto;
+          padding: 10px;
+          cursor: pointer;
+          line-height: 10px;
+         
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Welcome to my website</h1>
+    <h3>Starter Code</h3>
+    <p>Javascript is all about logic of anything</p>
+    <button id="button">Click me</button>
+    
+</body>
+<script>
+    
+    //getElementByClassName , getElementByTagName (return HTML Collection in the browser's console)
+
+    // Document.querySelector ("p");
+    //Document.querySelectorAll("p");
+    // alert("Virus Detected");
+let button=document.getElementById("button");
+console.dir(button);
+// console.dir(document.body.firstChild);
+
+// console.dir(document.body.children);
+//Children returns the HTMLCollection in the browser's console
+console.dir(document.head.children);
+
+// Childnodes returns the NodeList in the console
+console.dir(document.body.childNodes);
+
+</script>
+</html>
